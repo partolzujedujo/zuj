@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Add fallback styles for icons */
+        .material-icons:empty::before {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        /* Specific icon mappings for empty material-icons */
+        .navigation-menu .material-icons:empty::before {
+            content: 'menu';
+        }
+        
+        .navigation-menu [href*="index"] .material-icons:empty::before {
+            content: 'dashboard';
+        }
+        
+        .navigation-menu [onclick*="menu1"] .material-icons:empty::before,
+        .navigation-menu [onclick*="menu2"] .material-icons:empty::before,
+        .navigation-menu [onclick*="menu3"] .material-icons:empty::before,
+        .navigation-menu [onclick*="menu4"] .material-icons:empty::before {
+            content: 'view_list';
+        }
+        
+        .navigation-menu [onclick*="ltr"] .material-icons:empty::before,
+        .navigation-menu [onclick*="rtl"] .material-icons:empty::before {
+            content: 'language';
+        }
+        
+        .navigation-menu [onclick*="theme"] .material-icons:empty::before {
+            content: 'palette';
+        }
+        
+        /* Fix FontAwesome loading */
+        @font-face {
+            font-family: 'FontAwesome';
+            src: url('./جامعة الزيتونة الأردنية_files/fonts/fontawesome-webfont.woff2') format('woff2'),
+                 url('./جامعة الزيتونة الأردنية_files/fonts/fontawesome-webfont.woff') format('woff'),
+                 url('./جامعة الزيتونة الأردنية_files/fonts/fontawesome-webfont.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <p>This file contains icon fixes that should be applied to the main HTML file.</p>
+</body>
+</html>
